@@ -43,6 +43,11 @@ class MovieListViewControlller: UICollectionViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
     }
     
+    public func handleActivity(_ activity: NSUserActivity) {
+        let intent = activity.interaction?.intent as! INSendMessageIntent
+        print(intent.content)
+    }
+    
     private func setupCollectionView() {
         title = endpoint.description
         
@@ -82,6 +87,8 @@ class MovieListViewControlller: UICollectionViewController {
             guard authorization == INSiriAuthorizationStatus.authorized else {
                 return
             }
+            
+            print("Authorized")
             
             let intent = MoviesIntent()
             intent.endpoint = strongSelf.endpoint.description

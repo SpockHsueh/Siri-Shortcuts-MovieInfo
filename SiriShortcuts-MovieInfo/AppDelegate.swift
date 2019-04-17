@@ -8,11 +8,27 @@
 
 import UIKit
 import MovieKit
+import Intents
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
+        
+        guard let viewController = self.window?.rootViewController as? MovieListViewControlller else {
+            return false
+        }
+        
+        if let interaction = userActivity.interaction, let intent = interaction.intent as? INSendMessageIntent {
+            
+            if intent.content == "登入頁面" {
+                viewController.handleActivity(userActivity)
+            }
+        }
+        return true
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.

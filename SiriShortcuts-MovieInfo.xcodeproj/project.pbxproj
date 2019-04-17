@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		043F41B32261E499004FBD83 /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043F41B22261E499004FBD83 /* MovieListViewController.swift */; };
 		043F41F4226334F1004FBD83 /* Pods_SiriShortcuts_MovieInfo_MovieKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 043F41F3226334F1004FBD83 /* Pods_SiriShortcuts_MovieInfo_MovieKit.framework */; };
+		043FA1EC2264D3CA0080EF48 /* MessageIntent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 047EC4772264C30900632C7A /* MessageIntent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		043FA1EF2264D3CE0080EF48 /* MessageIntentUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 047EC4802264C30A00632C7A /* MessageIntentUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		047EC42E2263468E00632C7A /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047EC42D2263468E00632C7A /* IntentHandler.swift */; };
 		047EC4352263468E00632C7A /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 043F41CC22630D7E004FBD83 /* IntentsUI.framework */; };
 		047EC4382263468E00632C7A /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047EC4372263468E00632C7A /* IntentViewController.swift */; };
@@ -20,6 +22,10 @@
 		047EC44D226346BC00632C7A /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 047EC4252263461A00632C7A /* Intents.intentdefinition */; };
 		047EC44E226347A600632C7A /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 047EC4252263461A00632C7A /* Intents.intentdefinition */; };
 		047EC44F226347A700632C7A /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 047EC4252263461A00632C7A /* Intents.intentdefinition */; };
+		047EC47A2264C30A00632C7A /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047EC4792264C30A00632C7A /* IntentHandler.swift */; };
+		047EC4812264C30A00632C7A /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 043F41CC22630D7E004FBD83 /* IntentsUI.framework */; };
+		047EC4842264C30A00632C7A /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047EC4832264C30A00632C7A /* IntentViewController.swift */; };
+		047EC4872264C30A00632C7A /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047EC4852264C30A00632C7A /* MainInterface.storyboard */; };
 		04F051FD225E47AE0062F888 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F051FC225E47AE0062F888 /* AppDelegate.swift */; };
 		04F05204225E47B00062F888 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F05203225E47B00062F888 /* Assets.xcassets */; };
 		04F05207225E47B00062F888 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F05205225E47B00062F888 /* LaunchScreen.storyboard */; };
@@ -34,6 +40,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		043FA1ED2264D3CA0080EF48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04F051F1225E47AE0062F888 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 047EC4762264C30900632C7A;
+			remoteInfo = MessageIntent;
+		};
+		043FA1F02264D3CE0080EF48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04F051F1225E47AE0062F888 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 047EC47F2264C30A00632C7A;
+			remoteInfo = MessageIntentUI;
+		};
 		047EC43D2263468E00632C7A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 04F051F1225E47AE0062F888 /* Project object */;
@@ -66,6 +86,8 @@
 			files = (
 				047EC43F2263468E00632C7A /* MoviesIntentUI.appex in Embed App Extensions */,
 				047EC4422263468E00632C7A /* MoviesIntent.appex in Embed App Extensions */,
+				043FA1EF2264D3CE0080EF48 /* MessageIntentUI.appex in Embed App Extensions */,
+				043FA1EC2264D3CA0080EF48 /* MessageIntent.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -97,6 +119,13 @@
 		047EC43A2263468E00632C7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		047EC43C2263468E00632C7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		047EC4502263693700632C7A /* SiriShortcuts-MovieInfo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SiriShortcuts-MovieInfo.entitlements"; sourceTree = "<group>"; };
+		047EC4772264C30900632C7A /* MessageIntent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MessageIntent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		047EC4792264C30A00632C7A /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		047EC47B2264C30A00632C7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		047EC4802264C30A00632C7A /* MessageIntentUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MessageIntentUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		047EC4832264C30A00632C7A /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		047EC4862264C30A00632C7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		047EC4882264C30A00632C7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04F051F9225E47AE0062F888 /* SiriShortcuts-MovieInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SiriShortcuts-MovieInfo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F051FC225E47AE0062F888 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04F05203225E47B00062F888 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -132,6 +161,21 @@
 			files = (
 				047EC44A2263469900632C7A /* MovieKit.framework in Frameworks */,
 				047EC4352263468E00632C7A /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		047EC4742264C30900632C7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		047EC47D2264C30A00632C7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				047EC4812264C30A00632C7A /* IntentsUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +218,25 @@
 			path = MoviesIntentUI;
 			sourceTree = "<group>";
 		};
+		047EC4782264C30A00632C7A /* MessageIntent */ = {
+			isa = PBXGroup;
+			children = (
+				047EC4792264C30A00632C7A /* IntentHandler.swift */,
+				047EC47B2264C30A00632C7A /* Info.plist */,
+			);
+			path = MessageIntent;
+			sourceTree = "<group>";
+		};
+		047EC4822264C30A00632C7A /* MessageIntentUI */ = {
+			isa = PBXGroup;
+			children = (
+				047EC4832264C30A00632C7A /* IntentViewController.swift */,
+				047EC4852264C30A00632C7A /* MainInterface.storyboard */,
+				047EC4882264C30A00632C7A /* Info.plist */,
+			);
+			path = MessageIntentUI;
+			sourceTree = "<group>";
+		};
 		04F051F0225E47AE0062F888 = {
 			isa = PBXGroup;
 			children = (
@@ -181,6 +244,8 @@
 				04F889BA22633BA500A486CE /* MovieKit */,
 				047EC42C2263468E00632C7A /* MoviesIntent */,
 				047EC4362263468E00632C7A /* MoviesIntentUI */,
+				047EC4782264C30A00632C7A /* MessageIntent */,
+				047EC4822264C30A00632C7A /* MessageIntentUI */,
 				04F051FA225E47AE0062F888 /* Products */,
 				75F47995954DBA0B71B0E4EB /* Pods */,
 				FF7C07A897B35A5122E25320 /* Frameworks */,
@@ -194,6 +259,8 @@
 				04F889B922633BA500A486CE /* MovieKit.framework */,
 				047EC42B2263468E00632C7A /* MoviesIntent.appex */,
 				047EC4342263468E00632C7A /* MoviesIntentUI.appex */,
+				047EC4772264C30900632C7A /* MessageIntent.appex */,
+				047EC4802264C30A00632C7A /* MessageIntentUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -296,6 +363,40 @@
 			productReference = 047EC4342263468E00632C7A /* MoviesIntentUI.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		047EC4762264C30900632C7A /* MessageIntent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 047EC4922264C30A00632C7A /* Build configuration list for PBXNativeTarget "MessageIntent" */;
+			buildPhases = (
+				047EC4732264C30900632C7A /* Sources */,
+				047EC4742264C30900632C7A /* Frameworks */,
+				047EC4752264C30900632C7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MessageIntent;
+			productName = MessageIntent;
+			productReference = 047EC4772264C30900632C7A /* MessageIntent.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		047EC47F2264C30A00632C7A /* MessageIntentUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 047EC48F2264C30A00632C7A /* Build configuration list for PBXNativeTarget "MessageIntentUI" */;
+			buildPhases = (
+				047EC47C2264C30A00632C7A /* Sources */,
+				047EC47D2264C30A00632C7A /* Frameworks */,
+				047EC47E2264C30A00632C7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MessageIntentUI;
+			productName = MessageIntentUI;
+			productReference = 047EC4802264C30A00632C7A /* MessageIntentUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		04F051F8225E47AE0062F888 /* SiriShortcuts-MovieInfo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04F0520B225E47B00062F888 /* Build configuration list for PBXNativeTarget "SiriShortcuts-MovieInfo" */;
@@ -314,6 +415,8 @@
 				04F889BF22633BA500A486CE /* PBXTargetDependency */,
 				047EC43E2263468E00632C7A /* PBXTargetDependency */,
 				047EC4412263468E00632C7A /* PBXTargetDependency */,
+				043FA1EE2264D3CA0080EF48 /* PBXTargetDependency */,
+				043FA1F12264D3CE0080EF48 /* PBXTargetDependency */,
 			);
 			name = "SiriShortcuts-MovieInfo";
 			productName = "SiriShortcuts-MovieInfo";
@@ -355,6 +458,12 @@
 					047EC4332263468E00632C7A = {
 						CreatedOnToolsVersion = 10.1;
 					};
+					047EC4762264C30900632C7A = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					047EC47F2264C30A00632C7A = {
+						CreatedOnToolsVersion = 10.1;
+					};
 					04F051F8225E47AE0062F888 = {
 						CreatedOnToolsVersion = 10.1;
 						SystemCapabilities = {
@@ -386,6 +495,8 @@
 				04F889B822633BA500A486CE /* MovieKit */,
 				047EC42A2263468E00632C7A /* MoviesIntent */,
 				047EC4332263468E00632C7A /* MoviesIntentUI */,
+				047EC4762264C30900632C7A /* MessageIntent */,
+				047EC47F2264C30A00632C7A /* MessageIntentUI */,
 			);
 		};
 /* End PBXProject section */
@@ -403,6 +514,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				047EC43B2263468E00632C7A /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		047EC4752264C30900632C7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		047EC47E2264C30A00632C7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				047EC4872264C30A00632C7A /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,6 +639,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		047EC4732264C30900632C7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				047EC47A2264C30A00632C7A /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		047EC47C2264C30A00632C7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				047EC4842264C30A00632C7A /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		04F051F5225E47AE0062F888 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -536,6 +678,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		043FA1EE2264D3CA0080EF48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 047EC4762264C30900632C7A /* MessageIntent */;
+			targetProxy = 043FA1ED2264D3CA0080EF48 /* PBXContainerItemProxy */;
+		};
+		043FA1F12264D3CE0080EF48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 047EC47F2264C30A00632C7A /* MessageIntentUI */;
+			targetProxy = 043FA1F02264D3CE0080EF48 /* PBXContainerItemProxy */;
+		};
 		047EC43E2263468E00632C7A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 047EC4332263468E00632C7A /* MoviesIntentUI */;
@@ -562,6 +714,14 @@
 			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
+		047EC4852264C30A00632C7A /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				047EC4862264C30A00632C7A /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		04F05205225E47B00062F888 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -579,7 +739,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 26WBMBDFCZ;
 				INFOPLIST_FILE = MoviesIntentUI/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -599,7 +759,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 26WBMBDFCZ;
 				INFOPLIST_FILE = MoviesIntentUI/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -619,7 +779,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 26WBMBDFCZ;
 				INFOPLIST_FILE = MoviesIntent/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -639,13 +799,93 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 26WBMBDFCZ;
 				INFOPLIST_FILE = MoviesIntent/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.spock.SiriShortcuts-Gitstates.SiriShortcuts-MovieInfo.MoviesIntent";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		047EC4902264C30A00632C7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26WBMBDFCZ;
+				INFOPLIST_FILE = MessageIntentUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.spock.SiriShortcuts-Gitstates.SiriShortcuts-MovieInfo.MessageIntentUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		047EC4912264C30A00632C7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26WBMBDFCZ;
+				INFOPLIST_FILE = MessageIntentUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.spock.SiriShortcuts-Gitstates.SiriShortcuts-MovieInfo.MessageIntentUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		047EC4932264C30A00632C7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26WBMBDFCZ;
+				INFOPLIST_FILE = MessageIntent/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.spock.SiriShortcuts-Gitstates.SiriShortcuts-MovieInfo.MessageIntent";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		047EC4942264C30A00632C7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26WBMBDFCZ;
+				INFOPLIST_FILE = MessageIntent/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.spock.SiriShortcuts-Gitstates.SiriShortcuts-MovieInfo.MessageIntent";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
@@ -893,6 +1133,24 @@
 			buildConfigurations = (
 				047EC4472263468E00632C7A /* Debug */,
 				047EC4482263468E00632C7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		047EC48F2264C30A00632C7A /* Build configuration list for PBXNativeTarget "MessageIntentUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				047EC4902264C30A00632C7A /* Debug */,
+				047EC4912264C30A00632C7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		047EC4922264C30A00632C7A /* Build configuration list for PBXNativeTarget "MessageIntent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				047EC4932264C30A00632C7A /* Debug */,
+				047EC4942264C30A00632C7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
