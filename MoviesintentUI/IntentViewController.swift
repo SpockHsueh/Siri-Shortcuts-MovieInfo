@@ -34,6 +34,8 @@ class IntentViewController: UIViewController, INUIHostedViewControlling {
         collectionView.dataSource = self
         collectionView.register(MovieCollectionViewCell.nib, forCellWithReuseIdentifier: "Cell")
     }
+    
+    
         
     // MARK: - INUIHostedViewControlling
     
